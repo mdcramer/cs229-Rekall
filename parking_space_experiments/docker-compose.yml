@@ -1,0 +1,17 @@
+version: "2.3"
+services:
+  gpu:
+    image: scannerresearch/scannertools:gpu-9.0-cudnn7-latest
+    command: bash -c "cd /opt/scanner && jupyter notebook --allow-root --ip=0.0.0.0 --port=4326"
+    ports:
+      - "4326:4326"
+    volumes:
+      - .:/app
+    runtime: nvidia
+  cpu:
+    image: scannerresearch/scannertools:cpu-latest
+    command: bash -c "cd /opt/scanner && jupyter notebook --allow-root --ip=0.0.0.0 --port=4325"
+    ports:
+      - "4325:4325"
+    volumes:
+      - .:/app
