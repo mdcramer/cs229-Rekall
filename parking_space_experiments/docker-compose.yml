@@ -1,7 +1,7 @@
 version: "2.3"
 services:
   gpu:
-    image: scannerresearch/scannertools:gpu-9.1-cudnn7-latest
+    image: scannerresearch/scannertools:gpu-9.0-cudnn7-latest
     command: bash -c "cd / && jupyter notebook --allow-root --ip=0.0.0.0 --port=4326"
     ports:
       - "4326:4326"
