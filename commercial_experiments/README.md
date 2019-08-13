@@ -1,0 +1,1 @@
+For the commercial query, see https://github.com/scanner-research/esper-tv/blob/master/app/esper/commercial_detection_rekall.py
