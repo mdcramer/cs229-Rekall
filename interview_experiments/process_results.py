@@ -5,7 +5,7 @@ import sys
 
 seed = sys.argv[1]
 
-with open('results_30sec_balanced_{}/test.json'.format(seed), 'r') as f:
+with open('results_dense_{}/test.json'.format(seed), 'r') as f:
     results = json.load(f)
 
 gt = [
