@@ -1,7 +1,7 @@
 SEED=$1
 echo $SEED
 
-mkdir -p results_dense_$SEED
+mkdir -p /lfs/1/danfu/rekall_experiments/commercial_experiments/results_dense_$SEED
 
 ./train_3d_model_dense.sh $SEED
 ./test_3d_model_dense.sh $SEED
