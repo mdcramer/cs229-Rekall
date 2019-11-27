@@ -13,6 +13,8 @@ bash Miniconda3-latest-Linux-x86_64.sh
 conda activate base
 conda install jupyter
 conda install ipython
+conda install matplotlib
+conda install scipy
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
 # Install other utilities
